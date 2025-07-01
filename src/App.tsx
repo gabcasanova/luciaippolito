@@ -1,3 +1,4 @@
+import './i18n';
 import { HashRouter, Route, Routes } from "react-router";
 import Home from "./pages/home";
 
