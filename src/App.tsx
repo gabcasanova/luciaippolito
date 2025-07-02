@@ -1,12 +1,12 @@
 import './i18n';
 import { HashRouter, Route, Routes } from "react-router";
-import Home from './pages/Home';
+import Homepage from './pages/Homepage';
 
 function App() {
   return (
     <HashRouter>
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<Homepage />} />
       </Routes>
     </HashRouter>
   )
