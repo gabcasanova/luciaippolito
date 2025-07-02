@@ -1,5 +1,29 @@
 {
-    "test": {
-        "test": "aaa"
+    "header": {
+        "name": "Lucia Ippolito",
+        "navbar": {
+            "home": {
+                "text": "Home",
+                "link": "/"
+            },
+            "school": {
+                "text": "Formação",
+                "link": "/"
+            },
+            "work": {
+                "text": "Carreira",
+                "link": "/"
+            },
+            "about": {
+                "text": "Sobre",
+                "link": "/"
+            }
+        }
+    },
+
+    "footer": {
+        "name": "Lucia Ippolito.",
+        "copy": "Todos os direitos reservados.",
+        "location": "Rio Grande do Sul, Brasil."
     }
 }

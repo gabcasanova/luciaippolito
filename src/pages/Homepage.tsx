@@ -1,6 +1,9 @@
+import Page from "../components/layout/Page"
+
 const Homepage = () => {
   return (
-    <div>Homepage</div>
+    <Page>
+    </Page>
   )
 }
 
