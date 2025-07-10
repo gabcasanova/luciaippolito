@@ -2,6 +2,7 @@ import luciaPortrait from "../assets/luciaPortrait.png"
 
 import { useTranslation } from "react-i18next"
 import Page from "../components/layout/Page"
+import Articles from "../components/hompage/Articles"
 
 const Homepage = () => {
   const { t } = useTranslation()
@@ -47,6 +48,7 @@ const Homepage = () => {
       <div className="m-5 mt-30">
         <h1 className="font-bold text-center text-5xl text-lucia-brighterred " >༻ Matérias ༺ </h1>
         <p className="mt-2 text-center">Nesta seção, você encontra uma seleção de reportagens e textos produzidos ao longo da minha trajetória acadêmica e profissional. </p>
+        <Articles />
       </div>
     </Page>
   )
