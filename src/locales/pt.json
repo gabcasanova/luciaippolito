@@ -21,6 +21,17 @@
         }
     },
 
+    "homepage": {
+        "intro": {
+            "hello": "Olá, me chamo Lúcia!",
+            "uni": "Estudante de Jornalismo (UCPEL)",
+            "communication": "Comunicação Institucional e Política",
+            "production": "Produção de Conteúdo Textual e de Vídeo",
+            "desc": "Sou uma pessoa criativa, comprometida e com grande disposição para aprender e enfrentar novos desafios."
+        }
+        
+    },
+
     "footer": {
         "name": "Lucia Ippolito.",
         "copy": "Todos os direitos reservados.",

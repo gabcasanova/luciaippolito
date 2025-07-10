@@ -1,7 +1,8 @@
 import Header from "./Header";
 import Footer from "./Footer";
+import type { PropsWithChildren } from "react";
 
-const Page = () => {
+const Page = (props: PropsWithChildren) => {
   return (
     <div className="bg-lucia-darkred font-caudex">
       <div className="min-h-screen max-w-[1550px] m-auto flex flex-col
@@ -9,7 +10,7 @@ const Page = () => {
         <Header />
 
         <main className="grow bg-white">
-          aa
+          { props.children }
         </main>
 
         <Footer />
