@@ -28,6 +28,12 @@
             "communication": "Comunicação Institucional e Política",
             "production": "Produção de Conteúdo Textual e de Vídeo",
             "desc": "Sou uma pessoa criativa, comprometida e com grande disposição para aprender e enfrentar novos desafios."
+        },
+
+        "articles": {
+            "title": "༻ Matérias ༺",
+            "desc": "Nesta seção, você encontra uma seleção de reportagens e textos produzidos ao longo da minha trajetória acadêmica e profissional.",
+            "more": "Mais artigos..."
         }
         
     },

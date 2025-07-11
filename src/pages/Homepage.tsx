@@ -46,8 +46,8 @@ const Homepage = () => {
 
       {/* Articles */}
       <div className="m-5 mt-30">
-        <h1 className="font-bold text-center text-5xl text-lucia-brighterred " >༻ Matérias ༺ </h1>
-        <p className="mt-2 text-center">Nesta seção, você encontra uma seleção de reportagens e textos produzidos ao longo da minha trajetória acadêmica e profissional. </p>
+        <h1 className="font-bold text-center text-5xl text-lucia-brighterred " >{ t("homepage.articles.title") }</h1>
+        <p className="mt-2 text-center">{ t("homepage.articles.desc") }</p>
         <Articles />
       </div>
     </Page>

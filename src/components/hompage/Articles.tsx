@@ -1,3 +1,5 @@
+import 'animate.css';
+
 // Import articles from JSON
 import articles from "../../content/articles.json"
 
@@ -7,14 +9,35 @@ const logos: Record<string, string> = {
   ucpel: ucpelLogo
 };
 
-import { useState } from "react";
+import { useRef, useState } from "react";
+import { useTranslation } from 'react-i18next';
 
 const Articles = () => {
-  const [numberOfArticles, setNumberOfArticles] = useState(4)
+  const { t } = useTranslation()
+
+  // Number of currently displayed articles &
+  // how many articles are in the JSON.
+  const [numberOfArticles, setNumberOfArticles] = useState(9)
   const howManyArticles = articles.length
+
+  // More articles button action
+  const moreArticlesButtonRef = useRef<HTMLDivElement | null>(null)
+  const moreArticlesButtonAction = () => {
+    setNumberOfArticles(numberOfArticles + 5);
+
+    // Scroll to button smoothly
+    // Delay scroll to ensure new articles are rendered first
+    setTimeout(() => {
+      moreArticlesButtonRef.current?.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
+    }, 100) // Adjust timing if needed
+  }
 
   return (
     <div className="m-10 grid grid-cols-5 gap-4"> {/* Create a grid of news articles */}
+    
       {/* Create individual news articles from JSON */}
       {articles.slice(0, numberOfArticles).map((article) => (
         <a href={article.link} target="blank">
@@ -22,7 +45,8 @@ const Articles = () => {
                className="flex flex-col m-3 w-[250px] h-[250px]
                           hover:cursor-pointer hover:underline decoration-white
                           hover:brightness-110 transition-all bg-cover bg-center
-                          hover: shadow-[rgba(0,0,0,0.5)] hover:shadow-2xl"
+                          hover: shadow-[rgba(0,0,0,0.5)] hover:shadow-2xl
+                          animate__animated animate__fadeIn animate__fast"
                style={{backgroundImage: `url(${article.img})`}}>
 
             {/* Set the logo from the respective news portal */}
@@ -39,18 +63,17 @@ const Articles = () => {
         </a>
       ))}
 
-      {/**/}
+      {/* More Articles Button */}
       { numberOfArticles < howManyArticles && (
         <div className="flex flex-col m-3 w-[250px] h-[250px]
                         items-center justify-center
                         hover:cursor-pointer hover:underline decoration-white
                         hover:brightness-110 transition-all bg-cover bg-center
                         hover: shadow-[rgba(0,0,0,0.5)] hover:shadow-2xl
-                        bg-lucia-brightred"
-            onClick={() => {
-                setNumberOfArticles(numberOfArticles+5)
-            }}>
-          <p className="text-white text-2xl">Mais artigos...</p>
+                        bg-lucia-brightred hover:bg-lucia-red"
+            ref={ moreArticlesButtonRef }
+            onClick={ moreArticlesButtonAction }>
+          <p className="text-white text-2xl">{ t("homepage.articles.more") }</p>
         </div>
       )}
 
