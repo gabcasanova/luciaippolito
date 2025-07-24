@@ -1,8 +1,10 @@
 import luciaPortrait from "../assets/luciaPortrait.png"
 
+import 'animate.css';
 import { useTranslation } from "react-i18next"
 import Page from "../components/layout/Page"
 import Articles from "../components/hompage/Articles"
+import Promos from "../components/hompage/Promos";
 
 const Homepage = () => {
   const { t } = useTranslation()
@@ -12,12 +14,13 @@ const Homepage = () => {
       {/* Homepage introduction section */}
       <div className="m-7 mt-30 flex">
         {/* Lucia Image */}
-        <div>
+        <div className="animate__animated animate__fadeInDown">
           <img className=" w-[300px]" src={luciaPortrait} />
         </div>
 
         {/* Text */}
-        <div className="flex flex-col grow items-center justify-center">
+        <div className="flex flex-col grow items-center justify-center
+                        animate__animated animate__fadeInDown">
           {/* Hello */}
           <p className="mb-5 text-3xl font-bold">{ t("homepage.intro.hello") }</p>
           
@@ -49,6 +52,31 @@ const Homepage = () => {
         <h1 className="font-bold text-center text-5xl text-lucia-brighterred " >{ t("homepage.articles.title") }</h1>
         <p className="mt-2 text-center">{ t("homepage.articles.desc") }</p>
         <Articles />
+      </div>
+
+      {/* Reports */}
+      <div className="m-5 mt-30">
+        <h1 className="font-bold text-center text-5xl text-lucia-brighterred " >{ t("homepage.reports.title") }</h1>
+        <p className="mt-2 text-center">{ t("homepage.reports.desc") }</p>
+      </div>
+
+      {/* Promo Videos */}
+      <div className="m-5 mt-30">
+        <h1 className="font-bold text-center text-5xl text-lucia-brighterred " >{ t("homepage.videospromo.title") }</h1>
+        <p className="mt-2 text-center">{ t("homepage.videospromo.desc") }</p>
+        <Promos />
+      </div>
+
+      {/* Produced Videos */}
+      <div className="m-5 mt-30">
+        <h1 className="font-bold text-center text-5xl text-lucia-brighterred " >{ t("homepage.videosprod.title") }</h1>
+        <p className="mt-2 text-center">{ t("homepage.videosprod.desc") }</p>
+      </div>
+
+      {/* Radio */}
+      <div className="m-5 mt-30">
+        <h1 className="font-bold text-center text-5xl text-lucia-brighterred " >{ t("homepage.radio.title") }</h1>
+        <p className="mt-2 text-center">{ t("homepage.radio.desc") }</p>
       </div>
     </Page>
   )
