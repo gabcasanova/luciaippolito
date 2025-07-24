@@ -5,6 +5,7 @@ import { useTranslation } from "react-i18next"
 import Page from "../components/layout/Page"
 import Articles from "../components/hompage/Articles"
 import Promos from "../components/hompage/Promos";
+import Reports from "../components/hompage/Reports";
 
 const Homepage = () => {
   const { t } = useTranslation()
@@ -57,7 +58,8 @@ const Homepage = () => {
       {/* Reports */}
       <div className="m-5 mt-30">
         <h1 className="font-bold text-center text-5xl text-lucia-brighterred " >{ t("homepage.reports.title") }</h1>
-        <p className="mt-2 text-center">{ t("homepage.reports.desc") }</p>
+        <p className="mt-2 text-center m-auto max-w-[950px]">{ t("homepage.reports.desc") }</p>
+        <Reports />
       </div>
 
       {/* Promo Videos */}

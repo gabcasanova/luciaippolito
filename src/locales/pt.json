@@ -32,8 +32,32 @@
 
         "articles": {
             "title": "༻ Matérias ༺",
-            "desc": "Nesta seção, você encontra uma seleção de reportagens e textos produzidos ao longo da minha trajetória acadêmica e profissional.",
-            "more": "Mais artigos..."
+            "desc": "Textos produzidos ao longo da minha trajetória acadêmica e profissional, com foco em informar de forma clara e direta.",
+            "more": "Mais matérias..."
+        },
+
+        "reports": {
+            "title": "༻ Vídeo Reportagens ༺",
+            "desc": "Conteúdos mais aprofundados, que envolvem pesquisa, apuração detalhada e, às vezes, recursos visuais. Todos contam com roteiro e redação feitos por mim. Nos marcados com (*), também fui responsável pela captação e edição.",
+            "more": "Mais reportagens..."
+        },
+
+        "videospromo": {
+            "title": "༻ Vídeos Publicitários ༺",
+            "desc": "Participações em vídeos de divulgação institucional, nos quais apresento e represento conteúdos institucionais ou promocionais.",
+            "more": "Mais vídeos..."
+        },
+
+        "videosprod": {
+            "title": "༻ Vídeos Produzidos ༺",
+            "desc": "Vídeos que editei e produzi, do roteiro à finalização, com foco em conteúdo institucional e promocional.",
+            "more": "Mais vídeos..."
+        },
+
+        "radio": {
+            "title": "༻ Rádio ༺",
+            "desc": "Participações em programas de rádio como entrevistada ou colaboradora, explorando diferentes pautas.",
+            "more": "Mais participações..."
         }
         
     },
