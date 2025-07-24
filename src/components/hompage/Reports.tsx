@@ -73,7 +73,7 @@ const Reports = () => {
                         bg-lucia-brightred hover:bg-lucia-red"
             ref={ moreReportsButtonRef }
             onClick={ moreReportsButtonAction }>
-          <p className="text-white text-2xl">{ t("homepage.videosreport.more") }</p>
+          <p className="text-white text-2xl">{ t("homepage.videosprod.more") }</p>
         </div>
       )}
 
