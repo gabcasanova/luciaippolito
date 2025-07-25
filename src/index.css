@@ -9,3 +9,7 @@
 
   --font-caudex: "Caudex", serif;
 }
+
+body {
+  overflow-y: scroll; /* Show scrollbars */
+}
