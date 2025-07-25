@@ -29,7 +29,7 @@ const Experience = () => {
       <div className="font-fredoka mb-5" key={key}>
         <div className="flex items-center">
           {/* Institution Logo */}
-          <img className="h-[70px] w-[70px] mr-3 border-1 p-1" src={props.img} />
+          <img className="h-[70px] w-[70px] mr-3 border-1 p-1 border-lucia-brighterred" src={props.img} />
 
           {/* Institution name, date of work and location */}
           <div>
@@ -43,7 +43,7 @@ const Experience = () => {
           {/* Dot and line graphic */}
           <div className="w-[70px] p-2 flex flex-col items-center">
             <img className="w-[12px]" src={imgDot} />
-            <div className="border-s-3 h-full border-gray-700" />
+            <div className="border-s-3 h-full border-lucia-brighterred" />
           </div>
 
           <div className="flex-1">
