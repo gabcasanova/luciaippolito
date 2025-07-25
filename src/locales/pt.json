@@ -7,12 +7,8 @@
                 "link": "/"
             },
             "school": {
-                "text": "Formação",
-                "link": "/"
-            },
-            "work": {
-                "text": "Carreira",
-                "link": "/"
+                "text": "Experiência",
+                "link": "/exp"
             },
             "about": {
                 "text": "Sobre",
@@ -60,6 +56,56 @@
             "more": "Mais participações..."
         }
         
+    },
+
+    "experiences": {
+        "career": "Carreira",
+        "education": "Educação",
+
+        "academic": [
+            {
+                "institution": "UCPel - Universidade Católica de Pelotas",
+                "img": "/logos/ucpel.png",
+                "date": "2022 - até agora",
+                "location": "Pelotas, Rio Grande do Sul • EaD",
+                "role": "Bacharelado em Jornalismo",
+                "text": "Atualmente cursando Jornalismo na Universidade Católica de Pelotas (UCPel), com experiência prática em comunicação institucional e política. Possuo habilidades em produção de texto e vídeo, bem como em planejamento e execução de estratégias de marketing, comunicação interna e em equipe."
+            },
+            {
+                "institution": "SpeedTreinamentos",
+                "img": "/logos/speed.jpg",
+                "date": "2019",
+                "location": "Pelotas, Rio Grande do Sul • Presencial",
+                "role": "Curso de Administração e Gestão Empresarial",
+                "text": "Formação complementar com foco em práticas de administração e noções de gestão empresarial."
+            },
+            {
+                "institution": "CCAA - Centro de Cultura Anglo Americana",
+                "img": "/logos/ccaa.webp",
+                "date": "2011 à 2017",
+                "location": "Pelotas, Rio Grande do Sul • Presencial",
+                "role": "Curso de Inglês",
+                "text": "Curso completo de inglês, com foco em leitura, escrita, conversação e compreensão. Possuo proficiência no idioma."
+            }
+        ],
+        "companies": [
+            {
+                "institution": " Câmara Municipal de Pelotas",
+                "img": "/logos/pelotas.png",
+                "date": "2024 à 2025",
+                "location": "Pelotas, Rio Grande do Sul • Presencial",
+                "role": "Estagiária em Assessoria Política",
+                "text": "Produção e edição de vídeos e matérias para redes sociais e imprensa. Criação de material gráfico para diferentes tipos de plataforma e tráfego pago."
+            },
+            {
+                "institution": "UCPel - Universidade Católica de Pelotas",
+                "img": "/logos/ucpel.png",
+                "date": "2023 à 2025",
+                "location": "Pelotas, Rio Grande do Sul • Presencial",
+                "role": "Estagiária no setor de Comunicação e Marketing",
+                "text": "Produção de matérias, roteiros e textos para site, redes sociais e blog. Apresentação de vídeo, locução em programa de rádio e clipagem."
+            }
+        ]
     },
 
     "footer": {
