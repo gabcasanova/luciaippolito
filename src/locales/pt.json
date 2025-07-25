@@ -108,6 +108,12 @@
         ]
     },
 
+    "about": {
+        "title": "Sobre Mim",
+        "text": "Texto teste",
+        "social": "Minhas redes sociais:"
+    },
+
     "footer": {
         "name": "Lucia Ippolito.",
         "copy": "Todos os direitos reservados.",
