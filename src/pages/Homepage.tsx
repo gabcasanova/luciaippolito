@@ -7,6 +7,7 @@ import Articles from "../components/hompage/Articles"
 import Promos from "../components/hompage/Promos";
 import Reports from "../components/hompage/Reports";
 import Radio from "../components/hompage/Radio";
+import Produced from "../components/hompage/Produced";
 
 const Homepage = () => {
   const { t } = useTranslation()
@@ -74,6 +75,7 @@ const Homepage = () => {
       <div className="m-5 mt-30">
         <h1 className="font-bold text-center text-5xl text-lucia-brighterred " >{ t("homepage.videosprod.title") }</h1>
         <p className="mt-2 text-center">{ t("homepage.videosprod.desc") }</p>
+        <Produced />
       </div>
 
       {/* Radio */}
