@@ -25,24 +25,29 @@ const Promos = () => {
   const morePromosButtonAction = () => {
     setNumberOfPromos(numberOfPromos + 5);
 
+    // Only scroll on screens smaller than "xl" (1280px)
+    const isXL = window.matchMedia("(min-width: 1280px)").matches;
+
     // Scroll to button smoothly
-    // Delay scroll to ensure new promos are rendered first
-    setTimeout(() => {
-      morePromosButtonRef.current?.scrollIntoView({
-        behavior: "smooth",
-        block: "start",
-      });
-    }, 100) // Adjust timing if needed
+    // Delay scroll to ensure new articles are rendered first
+    if (isXL) {
+        setTimeout(() => {
+        morePromosButtonRef.current?.scrollIntoView({
+          behavior: "smooth",
+          block: "start",
+        });
+      }, 100) // Adjust timing if needed
+    }
   }
 
   return (
-    <div className="m-10 grid grid-cols-5 gap-4"> {/* Create a grid of news promos */}
+    <div className="xl:m-10 grid grid-cols-2 xl:grid-cols-5 xl:gap-4"> {/* Create a grid of news promos */}
     
       {/* Create individual news promos from JSON */}
       {promos.slice(0, numberOfPromos).map((promo) => (
         <a key={promo.id} href={promo.link} target="blank">
           <div 
-               className="flex flex-col m-3 w-[250px] h-[250px]
+               className="flex flex-col m-1 xl:m-3 xl:w-[250px] h-[250px]
                           hover:cursor-pointer hover:underline decoration-white
                           hover:brightness-110 transition-all bg-cover bg-center
                           hover: shadow-[rgba(0,0,0,0.5)] hover:shadow-2xl
@@ -65,8 +70,8 @@ const Promos = () => {
 
       {/* More Promos Button */}
       { numberOfPromos < howManyPromos && (
-        <div className="flex flex-col m-3 w-[250px] h-[250px]
-                        items-center justify-center
+        <div className="flex flex-col m-1 xl:m-3 xl:w-[250px] h-[250px]
+                        text-center items-center justify-center
                         hover:cursor-pointer hover:underline decoration-white
                         hover:brightness-110 transition-all bg-cover bg-center
                         hover: shadow-[rgba(0,0,0,0.5)] hover:shadow-2xl

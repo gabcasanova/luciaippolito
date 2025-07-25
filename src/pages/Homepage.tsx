@@ -15,10 +15,10 @@ const Homepage = () => {
   return (
     <Page>
       {/* Homepage introduction section */}
-      <div className="m-7 mt-30 flex">
+      <div className="m-7 mt-30 flex flex-wrap flex-col xl:flex-nowrap xl:flex-row">
         {/* Lucia Image */}
         <div className="animate__animated animate__fadeInDown">
-          <img className=" w-[300px]" src={luciaPortrait} />
+          <img className="w-[250px] m-auto xl:w-[300px]" src={luciaPortrait} />
         </div>
 
         {/* Text */}
@@ -28,25 +28,35 @@ const Homepage = () => {
           <p className="mb-5 text-3xl font-bold">{ t("homepage.intro.hello") }</p>
           
           {/* Bullet Points */}
-          <div className="flex items-center">
-            <div className="text-center">
-              <p className="text-6xl">🎓</p>
-              <p className="text-[20px]">{ t("homepage.intro.uni") }</p>
+          <div>
+            <div className="hidden xl:flex items-center">
+              <div className="text-center">
+                <p className="text-6xl">🎓</p>
+                <p className="text-[20px]">{ t("homepage.intro.uni") }</p>
+              </div>
+              <p className="ml-3 mr-3 text-2xl">&bull;</p>
+              <div className="text-center">
+                <p className="text-6xl">🏛️</p>
+                <p className="text-[20px]">{ t("homepage.intro.communication") }</p>
+              </div>
+              <p className="ml-3 mr-3 text-2xl">&bull;</p>
+              <div className="text-center">
+                <p className="text-6xl">🎥</p>
+                <p className="text-[20px]">{ t("homepage.intro.production") }</p>
+              </div>
             </div>
-            <p className="ml-3 mr-3 text-2xl">&bull;</p>
-            <div className="text-center">
-              <p className="text-6xl">🏛️</p>
-              <p className="text-[20px]">{ t("homepage.intro.communication") }</p>
-            </div>
-            <p className="ml-3 mr-3 text-2xl">&bull;</p>
-            <div className="text-center">
-              <p className="text-6xl">🎥</p>
-              <p className="text-[20px]">{ t("homepage.intro.production") }</p>
+
+            <div className="xl:hidden mt-10 mb-10 text-center text-[22px]">
+              <p>🎓 { t("homepage.intro.uni") }</p>
+              <p>&bull;</p>
+              <p>🏛️ { t("homepage.intro.communication") }</p>
+              <p>&bull;</p>
+              <p>🎥 { t("homepage.intro.production") }</p>
             </div>
           </div>
 
           {/* Description */}
-          <p className="mt-2 font-bold text-lg">{ t("homepage.intro.desc") }</p>
+          <p className="mt-2 font-bold text-lg text-center xl:text-left">{ t("homepage.intro.desc") }</p>
         </div>
       </div>
 

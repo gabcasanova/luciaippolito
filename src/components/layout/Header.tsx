@@ -13,7 +13,7 @@ const Header = () => {
   // Actual navbar.
   return (
     <header className="text-white bg-lucia-red">
-      <div className="pt-10 pb-10 pl-7 pr-7 flex justify-between items-center
+      <div className="pt-10 pb-10 pl-7 pr-7 hidden xl:flex justify-between items-center
                       bg-[url(/bg/headerBG.png)] bg-no-repeat bg-contain">
         {/* Logo */}
         <p className="font-bold text-6xl">

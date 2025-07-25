@@ -70,7 +70,7 @@ const Experience = () => {
   return (
     <Page>
       {/* Content */}
-      <div className="m-20 grid grid-cols-1 md:grid-cols-2 gap-20">
+      <div className="m-10 mt-30 xl:mt-10 xl:m-20 grid grid-cols-1 md:grid-cols-2 gap-20">
         <div>
           <h2 className="mb-10 text-4xl font-walkaway">{ t("experiences.career") }</h2>
           { createExperience(companyListing) }

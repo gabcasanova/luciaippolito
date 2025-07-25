@@ -12,7 +12,7 @@
             },
             "about": {
                 "text": "Sobre",
-                "link": "/"
+                "link": "/about"
             }
         }
     },
