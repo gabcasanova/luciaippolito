@@ -45,7 +45,7 @@ const Reports = () => {
     
       {/* Create individual news reports from JSON */}
       {reports.slice(0, numberOfReports).map((report) => (
-        <a key={report.id} href={report.link} target="blank">
+        <a key={"report"+report.id} href={report.link} target="blank">
           <div 
                className="flex flex-col m-1 xl:m-3 xl:w-[250px] h-[250px]
                           hover:cursor-pointer hover:underline decoration-white

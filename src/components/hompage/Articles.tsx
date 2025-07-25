@@ -45,7 +45,7 @@ const Articles = () => {
     
       {/* Create individual news articles from JSON */}
       {articles.slice(0, numberOfArticles).map((article) => (
-        <a key={article.id} href={article.link} target="blank">
+        <a key={"article"+article.id} href={article.link} target="blank">
           <div 
                className="flex flex-col m-1 xl:m-3 xl:w-[250px] h-[250px]
                           hover:cursor-pointer hover:underline decoration-white

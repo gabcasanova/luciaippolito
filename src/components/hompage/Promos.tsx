@@ -45,7 +45,7 @@ const Promos = () => {
     
       {/* Create individual news promos from JSON */}
       {promos.slice(0, numberOfPromos).map((promo) => (
-        <a key={promo.id} href={promo.link} target="blank">
+        <a key={"promo"+promo.id} href={promo.link} target="blank">
           <div 
                className="flex flex-col m-1 xl:m-3 xl:w-[250px] h-[250px]
                           hover:cursor-pointer hover:underline decoration-white
